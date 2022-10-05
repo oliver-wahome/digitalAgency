@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+.container {
+    margin: 0 4%; /* The other option is set a 4% padding for all pages except subscribe */
+    height: 700vh;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(255, 125, 125); */
+}
+
+.navbar {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Start of Divs in navbar */
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+
+.logo p {
+    margin: 5px 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.logoDivider {
+    height: 24px;
+    border: 1px solid #b9b9b9;
+}
+
+.menu {
+    flex: 4;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 5px 14px;
+    transition: 0.3s;
+}
+
+.menu ul li:hover {
+    border-bottom: 2px solid black;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #555;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    font-weight: 700;
+    color: #3f3f3f;
+}
+
+.menu ul li a:focus {
+    font-weight: 900;
+    color: black;
+}
+
+.auth {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 2;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: black;
+    padding: 10px 20px;
+    margin: 4px 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.signin {
+    border: none;
+    margin: 4px 16px;
+}
+
+.signin:hover {
+    cursor: pointer;
+    background-color: #e6e6e6;
+}
+
+.signup {
+    cursor: pointer;
+    border: none;
+    background-color: #fd346e;
+    border: 2px solid #fd346e;
+    color: white;
+    padding: 10px 35px;
+    margin: 4px 16px;
+    margin-right: 0;
+    box-shadow: 0px 15px 35px rgba(253, 52, 109, 0.4);
+}
+
+.signup:hover {
+    background-color: transparent;
+    color: #fd346e;
+}
+/* End of Divs in navbar */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+/* Start of divs in hero */
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80vh;
+    width: 50%;
+}
+
+/* 
+    .blueTitle is used for all blue text
+    mini titles on all pages
+*/
+
+.blueTitle p {
+    color: #197bff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.largeText h1 {
+    position: relative;
+    left: -4px;
+    padding: 0;
+    margin: 15px 0px;
+    font-size: 65px;
+    line-height: 70px;
+}
+
+/* 
+    .smallText is used to style all small text
+    below page titles for the whole webpage
+*/
+.smallText p {
+    margin: 10px 0px;
+    font-size: 16px;
+}
+
+.homeSmallText p {
+    width: 60%;
+}
+
+.heroButtons {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.getStarted {
+    margin-right: 10px;
+}
+
+.getStartedBtn {
+    cursor: pointer;
+    border: none;
+    background-color: #197bff;
+    border: 2px solid #197bff;
+    color: white;
+    padding: 10px 35px;
+    margin: 10px 0px;
+    box-shadow: 0px 15px 35px rgba(25, 125, 255, 0.4);
+}
+
+.getStartedBtn:hover {
+    background-color: transparent;
+    color: #197bff;
+}
+
+.howItWorks {
+    margin: 0 20px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #21d496;
+}
+
+.playBtn:hover {
+    cursor: pointer;
+}
+
+.heroImageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60vh;
+    width: 34%;
+    border-radius: 50%;
+    background-color: #197bff;
+    overflow: hidden;
+    position: relative;
+    top: -20px;
+    border: 5px solid #21d496;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 45vh;
+    width: 8%;
+    position: relative;
+    top: -20px;
+}
+
+.follow {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow p {
+    font-weight: 700;
+    width: 80px;
+    transform: rotate(90deg);
+}
+
+.icons {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons img {
+    transition: 0.4s ease-in-out;
+}
+
+.icons img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+/* End of divs in hero */
+
+.services {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Start of elements within the services page */
+
+/* 
+    .mediumText is used for all title text in
+    all pages except the home page
+*/
+.mediumText {
+    margin: 20px 0px;
+    width: 55%;
+    text-align: center;
+}
+
+.servicesTitle {
+    width: 55%;
+    margin-bottom: 40px;
+}
+
+.mediumText h3 {
+    font-size: 42px;
+}
+
+.serviceCardSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
+
+.serviceCard {
+    padding: 20px 30px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.blue_cardImage { 
+    background-color: #197bff;
+    box-shadow: 0px 15px 20px rgba(25, 125, 255, 0.4);
+}
+
+.red_cardImage { 
+    background-color: #fd346e;
+    box-shadow: 0px 15px 20px rgba(253, 52, 109, 0.4);
+}
+
+.green_cardImage { 
+    background-color: #16e3d0;
+    box-shadow: 0px 15px 20px rgba(22, 227, 207, 0.4);
+}
+
+.yellow_cardImage { 
+    background-color: #fcdd00;
+    box-shadow: 0px 15px 20px rgba(252, 223, 0, 0.4);
+}
+
+.serviceCard h2 {
+    font-size: 20px;
+}
+
+.serviceCard p{
+    font-size: 12px;
+}
+
+.cardBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    background-color: #e0e0e0;
+}
+
+.cardBtn a{
+    position: relative;
+    top: 3px;
+}
+
+/* End of elements within the services page */
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Start of elements within the about page */
+
+.aboutDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 90vh;
+    width: 45%;
+}
+
+.aboutImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.aboutTitle {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.aboutCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cardText {
+    width: 80%;
+    font-size: 16px;
+}
+
+/* End of elements within the about page */
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    /* background-color: green; */
+}
+
+/* Start of elements within the testimonial page */
+.titleSection {
+    height: 20vh;
+}
+
+.titleSection h3 {
+    margin-top: 10px;
+    line-height: 48px;
+}
+
+.testimonialTitle {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.slideshow {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+
+.blueQuotes {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -25px;
+}
+
+.slideshowSection {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideshow {
+    width: 55%;
+    /* border: 1px solid black; */
+}
+
+.slideshowImage {
+    border-radius: 10px;
+}
+
+.slideshowDescription {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 40%;
+    /* border: 1px solid black; */
+}
+
+.slideControl {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.arrow {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+
+/* End of elements within the testimonial page */
+
+.process {
+    height: 100vh;
+    background-color: blue;
+}
+
+.subscribe {
+    height: 100vh;
+    background-color: indigo;
+}
+
+.contact {
+    height: 100vh;
+    background-color: violet;
+}
