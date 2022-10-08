@@ -100,6 +100,7 @@ body {
 }
 
 .button {
+    cursor: pointer;
     background-color: transparent;
     border: 2px solid black;
     border-radius: 30px;
@@ -559,6 +560,8 @@ body {
     align-items: center;
 }
 
+/* Start of elements within the process page */
+
 .processTitleSection {
     height: 30vh;
     display: flex;
@@ -599,18 +602,96 @@ body {
     border: 2px dashed black;
 }
 
-/* Start of elements within the process page */
-
-
-
 /* End of elements within the process page */
 
 .subscribe {
+    position: relative;
+    left: -4%;
+    width: 108%;
+    padding: 4%;
     height: 100vh;
-    background-color: indigo;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("images/communitybgunsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* Start of elements within the subscribe page */
+
+.subscribeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
+    width: 50%;
+    padding: 55px;
+    color: white;
+    background-color: #197bff;
+    opacity: 95%;
+    border-radius: 20px;
+}
+
+.subscribeSmallText {
+    color: white;
+    font-weight: 700;
+}
+
+.subscribeTitle {
+    width: 100%;
+    text-align: left;
+}
+
+.subscribeInput {
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    width: 100%;
+    background-color: #88bbff;
+}
+
+.subscribeInput input{
+    height: 70%;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.subscribeInput input::placeholder {
+    color: white;
+}
+
+.subscribeBtn {
+    cursor: pointer;
+    margin: 3px;
+    width: 200px;
+    box-shadow: none;
+    color: #197bff;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.subscribeBtn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/* End of elements within the subscribe page */
 
 .contact {
     height: 100vh;
     background-color: violet;
 }
+
+/* Start of elements within the contact page */
+
+
+/* End of elements within the contact page */
